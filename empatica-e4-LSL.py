@@ -71,7 +71,7 @@ def suscribe_to_data():
         response = s.recv(bufferSize)
         print(response.decode("utf-8"))
     if tag:
-        print("Suscribing to Temp")
+        print("Suscribing to Tag")
         s.send(("device_subscribe " + 'tag' + " ON\r\n").encode())
         response = s.recv(bufferSize)
         print(response.decode("utf-8"))
